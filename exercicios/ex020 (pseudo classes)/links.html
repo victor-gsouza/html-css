@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children (filho)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: rgb(248, 233, 17);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        .especial::before {
+            content: '⇒ ';
+        }
+
+        .especial::after {
+            content: ' ⇐';
+        }
+
+        p::first-line {
+            color: blue;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.google.com/" rel="ext" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com/" class="especial" rel="ext" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.facebook.com/" rel="ext" target="_blank">FaceBook</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto pariatur ut rem, enim illo fugit dignissimos doloremque laudantium vitae earum voluptatibus recusandae, fuga possimus impedit, consectetur sint id aliquam sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore consequuntur ut sequi tenetur, id itaque expedita dolor nihil excepturi quia fugiat facilis rem natus non assumenda libero quos repudiandae at?</p>
+</body>
+</html>

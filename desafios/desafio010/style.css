@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf);
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, #1a5c38, #3dda84);
+    padding: 6px;
+    color: white;
+    box-shadow: 6px 3px 8px #1a5c38;  
+
+}
+
+h1#caixa_alta {
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 18px;
+}
+
+nav ul li:hover {
+    color: white;
+    background-color: #b6f1d0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: #84e1ad;
+    margin: 0px;
+}
+
+main {
+    background-color: white;
+    width: 850px;
+    margin: 0px auto 20px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 12px black;
+}
+
+main h2 {
+    text-align: left;
+    color: #1a5c38;
+    padding: 5px;
+    margin-left: 15px;
+    background-image: linear-gradient(to right, #3dda845b, #afdfc64d, white);
+}
+
+main h1 {
+    color: #1a5c38;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+main a {
+    text-decoration: none;
+    color: #1a5c38;
+    font-weight: bolder;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: #3dda84;
+}
+
+.fonte-android {
+    font-family: 'android', Arial, Helvetica, sans-serif;
+}
+
+.artigo2-titulo {
+    margin-left: 0;
+    color: white;
+    background-image: none;
+    background-color: #1a5c38;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.artigo2 {
+    background-color: #b6f1d0;
+    border-radius: 15px 15px 10px 10px;
+    box-shadow: 1px 3px 8px #608f75;
+}
+
+article ul {
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+}
+
+article ul li::before {
+    content: '✓ ';
+}
+
+article a.links-externos::after {
+    content: '🔗';
+}
+
+div#video {
+    background-color: #1a5c38;
+    width: 850px;
+    margin: auto;
+}
+
+footer {
+    padding: 1px;
+    color: white;
+    text-align: center;
+    background-color: #1a5c38;
+    margin-bottom: 0;
+}

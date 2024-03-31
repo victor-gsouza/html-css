@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* width: 800px; não é responsivo, não utilizar */
+            min-width: 250px; /* 320px era a largura de celulares mais antigos como por exemplo o Iphone 5, mas com 250px foi que não gerou nenhuma barra lateral, então foi essa a largura utilizada */
+            max-width: 800px; /* Tamanho julgado ser bom para o conteudo */
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, mollitia tempora tenetur numquam sequi placeat porro. Neque atque cum sed voluptates, soluta ea, vero ipsam error, ad culpa harum quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur fugiat nostrum deserunt esse, cupiditate consequatur sed similique incidunt perspiciatis nulla, at placeat possimus rem iste eos vitae, molestias repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis quis obcaecati veritatis qui veniam consequuntur ratione esse, eveniet sequi, odio quo. Neque deserunt consequuntur veniam illum, recusandae cupiditate dicta!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, mollitia tempora tenetur numquam sequi placeat porro. Neque atque cum sed voluptates, soluta ea, vero ipsam error, ad culpa harum quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur fugiat nostrum deserunt esse, cupiditate consequatur sed similique incidunt perspiciatis nulla, at placeat possimus rem iste eos vitae, molestias repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis quis obcaecati veritatis qui veniam consequuntur ratione esse, eveniet sequi, odio quo. Neque deserunt consequuntur veniam illum, recusandae cupiditate dicta!</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #bfc0c0, #4f5d75);
+}
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 15px #282f3bbe; /* 4 parâmetros: o primeiro é quanto essa sombra vai andar para o lado, o segundo quanto a sombra vai para baixo, o terceiro quanto a sombra vai espalhar, e o ultimo é transparencia*/
+    border-radius: 10px; /* arredonda as bordas da caixa branca */
+    width: 600px; /* largura */
+    padding: 10px; /* da um distanciamento do texto para a caixa branca */
+    margin: auto;  /* centraliza */
+}
+
+h1 {
+    text-align: center;
+    color: #EF8354;
+    text-shadow: 1px 1px 2px #7a432b;
+}
+
+h2 {
+    color: #676F54;
+}
+
+p {
+    text-align: justify;
+}

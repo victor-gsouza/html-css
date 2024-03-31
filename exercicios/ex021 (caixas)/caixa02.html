@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #C0C0C0,#4e4e4e);
+            margin: 0;
+        }
+
+        nav {
+            background-color: lightslategrey;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.466);
+            border-radius: 6px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            background-color: rgb(92, 106, 119);
+            text-decoration: underline;
+            border: 2px solid white;
+        }
+
+        header{
+            background-color: #DCDCDC;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: #DCDCDC;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: gray;
+            border-radius: 10px;
+            padding: 0px 2px 2px 2px;
+        }
+
+        article > aside {
+            background-color: rgb(97, 97, 97);
+        }
+
+        footer {
+            background-color: black;
+            color: #DCDCDC;
+            border: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer > p { /* Se faz necessário porque senão o footer fica com uma margem ridicula de 16px */
+            margin: 0px;
+        }
+        
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- Links de menu tag nav  -->
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav> 
+    </header>
+    <main> <!-- Conteúdo Principal -->
+        <section id="assuntos">
+            <article> <!-- Artigo -->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, atque corrupti! Quam laborum non dolor cupiditate, ab animi! Accusantium expedita vel consequatur assumenda perspiciatis fugiat placeat corporis, atque nemo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate provident dolor voluptas vero quis, ex reiciendis veritatis iste dignissimos sed voluptatem molestiae voluptatum nam, totam modi enim sapiente quaerat.</p>
+                <aside> <!-- Relativo ao artigo -->
+                    <p>Artigo escrito por X.</p>
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+
+        </section>
+
+    </main>  
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por Victor</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
