@@ -1,3 +1,77 @@
 @charset "UTF-8";
 
 /* Todas as demais midias */
+
+@media print { /* Impressora */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        width: 70vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    article {
+        padding: 30px 20px;
+    }
+
+    article::after {
+        content: 'Essa impressão foi feita através do site piriripororo.com.br';
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+}
+
+/* Não preciso declarar para telas pequenas e celulares porque o site ja utiliza a filosofia de Mobile First. */
+
+@media screen and (min-width: 798px) { /* Tablets */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+}
+
+@media screen and (min-width: 992px) { /* Desktops */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;}
+    
+}
+
+@media screen and (min-width: 1200px) { /* Telas Grandes */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;}
+}
